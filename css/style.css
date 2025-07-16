@@ -1,0 +1,266 @@
+@import url(../css/intro.css);
+@import url(../css/eventos.css);
+@import url(../css/cozinha.css);
+
+:root{
+    --branco: #fff;
+    --cor-base: #EDEDED; 
+    --cor-secundaria: #083329;
+    --laranja: #f25f29;
+    --verde-claro: #82bf26;
+    --verde-escuro: #3c7322;
+    --marrom: #5c4033;
+    --marrom-escuro: #381916;
+    
+    --fonte-titulo: 'MedievalSharp', cursive;
+    --fonte-textos: 'Crimson Pro', serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: var(--fonte-textos);
+    background-color: var(--cor-base);
+}
+
+/**Navbar**/
+.header{
+    background-color: var(--marrom-escuro);
+    color: var(--cor-base);
+    position: relative;
+    z-index: 99;
+}
+
+.home-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.7em 1em;
+}
+
+.home-nav-computador{
+    display: none;
+}
+
+.home-logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo, .menu-hamburguer{
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+}
+
+.home-titulo{
+    color: var(--branco);
+    text-shadow: 1px 1px 2px var(--cor-secundaria);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 1.3em;
+    display: block;
+}
+
+#exibir_links{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.home-nav a{
+    background-color: var(--verde-escuro);
+    padding: 1em 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: dashed 1px var(--cor-base);
+    
+    color: var(--branco);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    
+    display:block;    
+}
+
+.home-nav a:active,
+.home-nav a:focus{
+    background-color: var(--verde-claro);
+    color: var(--branco);
+}
+
+/** FOOTER **/
+
+.footer-container{
+    background-color: var(--marrom-escuro);
+    width: 100%;
+}
+
+.footer-titulo{
+    text-align: left;
+    color: var(--cor-base);
+    font-size: 1.5rem;
+
+    padding: 2.5rem;
+}
+
+.footer-info{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+    padding: 2.5rem;
+}
+
+.footer-info-subtitulo{
+    color: var(--cor-base);
+    padding-bottom: 6px;
+}
+
+.footer-info-texto{
+    color: var(--cor-base);
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.footer-newsletter{
+    padding: 0.5rem 2.5rem 4rem 2.5rem;
+}
+
+.footer-newsletter-subtitulo{
+    color: var(--cor-base);
+    font-family: var(--fonte-texto);
+    font-size: 1.2rem;
+
+    padding-bottom: 16px;
+}
+
+.footer-newsletter-container{
+    display: flex;
+    width: 100%;
+}
+
+.footer-newsletter-input{
+    padding: 0.7rem;
+    width: 100%;
+
+    background-color: var(--cor-base);
+    border: none;
+    border-radius: 5px 0 0 5px;
+
+    color: var(--cor-secundaria);
+}
+
+.footer-newsletter-btn{
+    padding: 0 1rem;
+
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 0 5px 5px 0;
+
+    color: var(--cor-base);
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+#location{
+    width : 100vw;
+    aspect-ratio: 1/0.7;
+    border: 0;
+}
+
+.copyright{
+    padding: 1.5rem;
+
+    text-align: center;
+    color: var(--cor-base);
+    font-size: 12px;
+}
+
+/** Escurecer a tela ao abrir o menu **/
+
+#blackout{    
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000077;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+
+    -webkit-transition: opacity ease-in-out 0.1s;
+    transition: opacity ease-in-out 0.2s;
+}
+
+@media screen and (min-width: 720px){
+    .home-page{
+        padding: 0.7em 5vw;
+    }
+
+    #location{
+        max-height: 40vh;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* NAVBAR */
+    
+    .home-page{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        padding: 0.7em 5vw;
+    }
+
+    .menu-hamburguer{
+        display: none;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        position: relative;
+    }
+
+    .home-titulo{
+        display: none;
+    }
+
+    .home-nav-computador{
+        display: flex;
+        justify-content: end;
+    } 
+
+    .home-nav-computador a{
+        padding: 0 1.5em;
+        
+        color: var(--branco);
+        font-size: 26px;
+        font-family: var(--fonte-titulo);
+        font-weight: 600;
+        
+        display:block; 
+    }
+
+    .home-nav a:active,
+    .home-nav a:focus{
+        background-color: var(--verde-claro);
+        color: var(--branco);
+    }
+
+    #location{
+        max-height: 500px;
+    }
+}

@@ -1,0 +1,88 @@
+/** INTRODUÇÃO **/
+
+.intro{
+    background-image: url(../img/vila_hobbit.jpg);
+    background-size: cover;
+    background-position: 25%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 2.5em;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: #3c7322c5;
+    aspect-ratio: 1/1;
+    padding: 8vw;
+    border-radius: 1.5em;
+    color: var(--cor-base);
+}
+
+.intro-titulo{
+    text-align: left;
+    font-size: clamp(28px, calc(28px + (100vw - 430px) * 0.083), 52px);
+    font-weight: 900;
+    font-family: var(--fonte-titulo);
+    text-shadow: 2px 2px 5px var(--verde-escuro);
+}
+
+.intro-texto{
+    text-align: justify;
+    font-size: clamp(18px, calc(18px + (100vw - 430px) * 0.048),32px);
+    text-shadow: 1px 1px 5px var(--verde-escuro);
+
+    padding-top: 1em;
+}
+
+/** TABLET **/
+
+@media screen and (min-width: 720px) {
+
+.intro{
+    background-position: 70%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.intro-content{
+    grid-column: 2/3;
+    padding: 6vw;
+}
+
+.intro-titulo{
+    font-size: clamp(22px, calc(22px + (100vw - 720px) * 0.0395), 34px);
+}
+
+.intro-texto{
+    text-align: justify-all;
+    font-size: clamp(18px, calc(18px + (100vw - 720px) * 0.0263), 26px);
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .intro{
+        max-height: calc(100vh - 100px);
+        padding: 2vw 8vw;
+    }
+
+    .intro-content{
+        max-height: 1fr;
+        margin: 0 auto;
+    }
+
+    .intro-titulo{
+        font-size: clamp(28px, calc(28px + (100vw - 1024px) * 0.0334), 58px);
+    }
+
+    .intro-texto{
+        font-size: clamp(22px, calc(22px + (100vw - 1024px) * 0.0200), 40px) ;
+    }
+}

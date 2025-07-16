@@ -1,0 +1,256 @@
+/** INTRODUÇÃO **/
+
+.intro{
+    background-image: url(../img/vila_hobbit.jpg);
+    background-size: cover;
+    background-position: 25%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 2.5em;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #3c7322c5;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+    border-radius: 1.5em;
+    color: var(--cor-base);
+}
+
+.intro-titulo{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: var(--fonte-titulo);
+    text-shadow: 2px 2px 5px var(--verde-escuro);
+}
+
+.intro-texto{
+    text-align: justify;
+    font-size: 1.22rem;
+    text-shadow: 1px 1px 5px var(--verde-escuro);
+
+    padding-top: 1em;
+}
+
+/** COZINHA **/
+
+.cozinha{
+    background-image: linear-gradient(#EDEDEDEE, #EDEDEDDD), url(../img/doodles-black.png);
+    background-size: 100%;
+    padding: 2.5em;
+}
+
+.cozinha-titulo{
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte-titulo);
+    padding-bottom: 1em;       
+}
+
+.cozinha-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.cozinha-container img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+
+.cozinha-card{
+    background-color: var(--cor-base);
+    box-shadow: 1px 1px 2px var(--marrom);
+    border-radius: 18px;     
+}
+
+.cozinha-card-texto{
+    width: 100%;
+    height: 2em;
+    border-radius: 0 0 18px 18px;
+    padding: 5px;
+
+    color: var(--marrom);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/** EVENTOS **/
+
+.eventos{
+    background-image: url(../img/games-bg1.jpg);
+    background-size: fill;
+    background-position: center;
+    width: 100vw;
+    height: max-content;
+
+    padding: 2.5em 0;
+}
+
+.eventos-titulo{
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-base);
+    padding-bottom: 1em;   
+}
+
+.eventos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto auto;
+}
+
+.eventos-img-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.eventos-seta-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventos-txt-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    background-image: url(../img/mesa-de-madeira.png);
+    border-radius: 15px;
+    height: max-content;
+    padding: 2.5em;
+    margin: 10px;
+    transform: translateY(-30px);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos-seta{
+    width: 45px;
+    z-index: 10;
+}
+
+.eventos-seta-esquerda{
+    left: 0;
+    margin-left: 15px;
+}
+
+.eventos-seta-direita{
+    rotate: 180deg;
+    right: 0;
+    margin-right: 15px;
+}
+
+.eventos-img{
+    width: 265px;
+    height: 370px;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px var(--cor-base);
+    border-radius: 15px;
+}
+
+#evento-1{
+    filter: brightness(0.5);
+    z-index: 2;
+    transform: translateX(-60%);
+    scale: 0.95;
+    rotate: -5deg;
+    transform: translateZ(0px);
+}
+
+#evento-2{
+    filter: none;
+    z-index: 3;
+    transform: translateX(0);
+    scale: 1;
+    rotate: 0;
+    transform: translateZ(0px);
+}
+
+#evento-3{
+    filter: brightness(0.5);
+    z-index: 2;
+    transform: translateX(60%);
+    scale: 0.95;
+    rotate: 5deg;
+    transform: translateZ(0px);
+}
+
+.eventos-txt-titulo{
+    margin-top: 30px;
+
+    color: var(--cor-base);
+    font-size: 2em;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+.eventos-txt-texto{
+    color: var(--cor-base);
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.eventos-txt-texto b{
+    font-weight: 600;
+}
+
+.eventos-txt-texto.data{
+    margin-top: 25px;
+}
+.eventos-txt-texto.horario{
+    margin-top: 5px;
+}
+
+.eventos-txt-texto.descricao{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.evento-txt-inscricao{
+    align-self: center;
+    margin-top: 30px;
+    padding: 1em 3em;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--laranja);
+    box-shadow: 0px 1px 8px var(--marrom);
+
+    color: var(--cor-base);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+}
+
+.evento-txt-inscricao:active{
+    background-color: var(--cor-base);
+    color: var(--laranja);
+}
+
