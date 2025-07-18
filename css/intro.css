@@ -63,7 +63,7 @@
 
 .intro-texto{
     text-align: justify-all;
-    font-size: clamp(18px, calc(18px + (100vw - 720px) * 0.0263), 26px);
+    font-size: clamp(18px, calc(18px + (100vw - 720px) * 0.0263), 22px);
 }
 }
 
@@ -74,7 +74,7 @@
     }
 
     .intro-content{
-        max-height: 1fr;
+        max-height: calc((100vh - 200px));
         margin: 0 auto;
     }
 

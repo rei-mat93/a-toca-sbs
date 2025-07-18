@@ -1,12 +1,5 @@
 const cartas = [
     {
-        img: 'img/rpg.jpg',
-        titulo: 'Mesa de RPG',
-        data: 'Todas as quinta-feiras',
-        horario: 'A partir das 15h',
-        descricao: 'Crie seu personagem e venha se aventurar no incrivel mundo de Gumball. Enfrente horda de goblins, dragões e diversos outros monstros perigosos enquanto faz diversas novas amizades pelo caminho.'
-    },
-    {
         img: 'img/magic.jpg',
         titulo: 'Liga Magic',
         data: '05/11',
@@ -21,15 +14,22 @@ const cartas = [
         descricao: 'Venha duelar, trocar cartas e fazer amizades! Traga seu baralho, suas trocas e sua energia de treinador para uma tarde com a comunidade Pokémon!'
     },
     {
-        img: 'img/chocobo.jfif',
+        img: 'img/corrida-chocobo.png',
         titulo: 'Corrida Chocobo',
         data: 'Todas as quinta-feiras',
         horario: 'A partir das 15h',
-        descricao: 'Crie seu personagem e venha se aventurar no incrivel mundo de Gumball. Enfrente horda de goblins, dragões e diversos outros monstros perigosos enquanto faz diversas novas amizades pelo caminho.'
+        descricao: 'Prepare-se para uma disputa mágica como nenhuma outra! Os planoswalker foram convidados a participar da lendária Corrida de Chocobo, onde criaturas fantásticas cruzam os campos de Dominária em uma competição cheia de velocidade, feitiços e surpresas! Customize seu baralho, escolha seu chocobo corredor e use toda sua estratégia para cruzar a linha de chegada primeiro. Cartas exclusivas, recompensas temáticas e muita diversão te esperam nesse evento épico!'
     },
     {
         img: 'img/montserrat.jpeg',
         titulo: 'Cerveja e Games',
+        data: '29/06',
+        horario: 'A partir das 15h',
+        descricao: "Mesmo com A Toca fechada, a diversão continua! <br>Venha curtir o espaço da Cervejaria Montserrat com: <br><br>✅ As melhores cervejas artesanais!<br>✅ Uma seleção incrível de jogos de tabuleiro disponíveis para jogar no local!<br><br> Diversão garantida + Cerveja de qualidade = Domingo perfeito!"
+    },
+    {
+        img: 'img/rpg.png',
+        titulo: 'Mesa de RPG',
         data: 'Todas as quinta-feiras',
         horario: 'A partir das 15h',
         descricao: 'Crie seu personagem e venha se aventurar no incrivel mundo de Gumball. Enfrente horda de goblins, dragões e diversos outros monstros perigosos enquanto faz diversas novas amizades pelo caminho.'

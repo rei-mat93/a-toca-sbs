@@ -62,7 +62,7 @@
     transform: translateY(-10%);
    
     display: grid;
-    grid-template-rows: 5em 3em 3em 150px 1fr;
+    grid-template-rows: 5em 3em 3em 250px 1fr;
 }
 
 .eventos-seta{
@@ -181,7 +181,7 @@
 @media screen and (min-width: 720px) {
 
 .eventos{
-    height: 980px;
+    height: 1080px;
 }
 
 .eventos-titulo{
@@ -194,7 +194,7 @@
 
 .eventos-txt-container{
     transform: translateY(-8vw);
-    grid-template-rows: 5em 3em 3em 150px 1fr;
+    grid-template-rows: 5em 3em 3em 250px 1fr;
 
     padding: 2.5em;
     margin: 0 15vw;
@@ -247,7 +247,7 @@
     .eventos{
         overflow: hidden;
         max-width: 100%;
-        height: 1100px;
+        height: 1200px;
     }
 
     .eventos-container{
